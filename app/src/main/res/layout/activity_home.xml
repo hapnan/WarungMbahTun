@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="slg.dev.warungmbahtun.home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:paddingLeft="23dp"
+            android:text="SELAMAT DATANG"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:accessibilityLiveRegion="assertive"
+            android:paddingLeft="55dp"
+            android:text="Mau Pesan Apa?"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="cursive"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/header2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Utama"
+            android:textSize="25sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textColorHighlight="#ffff"/>
+
+            <ImageButton
+                android:id="@+id/gmbr1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nasi Rawon"
+                android:textSize="25sp"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textColorHighlight="#ffff"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/gmbr2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:onClick="gbr1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Nasi Opor Pedas"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textColorHighlight="#ffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/gmbr2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nasi Opor Pedas + Urap"
+                android:textSize="25sp"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textColorHighlight="#ffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
